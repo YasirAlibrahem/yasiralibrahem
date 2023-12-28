@@ -25,8 +25,6 @@ function App() {
             designed with love!
           </Blankslate.Description>
         </Blankslate>
-        {/* <header className="App-header">
-        </header> */}
       </div>
       </BaseStyles>
     </ThemeProvider>
