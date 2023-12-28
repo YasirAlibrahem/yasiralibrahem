@@ -1,24 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
+import {ThemeProvider, BaseStyles} from '@primer/react';
+import {TabNav} from '@primer/react';
+import {Blankslate} from '@primer/react/drafts';
+import {BookIcon} from '@primer/styled-octicons';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider>
+      <BaseStyles>
+        <div className="App">
+        <TabNav aria-label="Main">
+          <TabNav.Link href="#" selected>
+            Home
+          </TabNav.Link>
+          <TabNav.Link href="#">Posts</TabNav.Link>
+          <TabNav.Link href="#">Contact</TabNav.Link>
+        </TabNav> 
+        <Blankslate>
+          <Blankslate.Visual>
+            <BookIcon size="medium" />
+          </Blankslate.Visual>
+          <Blankslate.Heading>work in progress</Blankslate.Heading>
+          <Blankslate.Description>
+            designed with love. 
+          </Blankslate.Description>
+        </Blankslate>
+        {/* <header className="App-header">
+        </header> */}
+      </div>
+      </BaseStyles>
+    </ThemeProvider>
   );
 }
 
