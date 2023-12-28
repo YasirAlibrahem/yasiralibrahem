@@ -22,7 +22,7 @@ function App() {
           </Blankslate.Visual>
           <Blankslate.Heading>work in progress</Blankslate.Heading>
           <Blankslate.Description>
-            designed with love. 
+            designed with love!
           </Blankslate.Description>
         </Blankslate>
         {/* <header className="App-header">
