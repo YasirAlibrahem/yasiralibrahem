@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import {ThemeProvider, BaseStyles} from '@primer/react';
 import {TabNav} from '@primer/react';
