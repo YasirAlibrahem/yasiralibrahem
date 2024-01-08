@@ -1,31 +1,31 @@
 import './App.css';
 import {ThemeProvider, BaseStyles} from '@primer/react';
-import {TabNav} from '@primer/react';
-import {Blankslate} from '@primer/react/drafts';
-import {BookIcon} from '@primer/styled-octicons';
+import {PageLayout} from '@primer/react';
+import BlogPosts from './Posts';
 
 function App() {
   return (
     <ThemeProvider>
       <BaseStyles>
         <div className="App">
-        <TabNav aria-label="Main">
-          <TabNav.Link href="#" selected>
-            Home
-          </TabNav.Link>
-          <TabNav.Link href="#">Posts</TabNav.Link>
-          <TabNav.Link href="#">Contact</TabNav.Link>
-        </TabNav> 
-        <Blankslate>
-          <Blankslate.Visual>
-            <BookIcon size="medium" />
-          </Blankslate.Visual>
-          <Blankslate.Heading>work in progress</Blankslate.Heading>
-          <Blankslate.Description>
-            designed with love!
-          </Blankslate.Description>
-        </Blankslate>
-      </div>
+        <PageLayout className="PageLayout">
+          <PageLayout.Header>
+            <h1 label="Header" height={64}> Yasir Alibrahem </h1>
+          </PageLayout.Header>
+          <PageLayout.Content className="PageLayout.Content">
+            <BlogPosts />
+          </PageLayout.Content>
+          <PageLayout.Pane sticky divider="line" hidden={{narrow: true}}>
+            <img src={process.env.PUBLIC_URL + '/chrome-512x512.png'} alt="Profile" style={{borderRadius: '50%', width: '100px', height: '100px'}} />
+            <p>
+            Intentionality, productivity, communication, and technology. 
+            </p>
+          </PageLayout.Pane>
+          <PageLayout.Footer divider="line" className="PageLayout.Footer">
+            <h5 label="Footer" height={64}> Thank you for stopping by. </h5>
+          </PageLayout.Footer>
+      </PageLayout>
+        </div>
       </BaseStyles>
     </ThemeProvider>
   );
