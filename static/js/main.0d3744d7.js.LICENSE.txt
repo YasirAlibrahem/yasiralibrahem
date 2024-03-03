@@ -4,6 +4,15 @@ object-assign
 @license MIT
 */
 
+/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */
+
+/*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
+
 /**
  * @license React
  * react-dom.production.min.js
@@ -55,7 +64,7 @@ object-assign
  */
 
 /**
- * @remix-run/router v1.14.1
+ * @remix-run/router v1.15.1
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -66,7 +75,18 @@ object-assign
  */
 
 /**
- * React Router v6.21.1
+ * React Router DOM v6.22.1
+ *
+ * Copyright (c) Remix Software Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
+ */
+
+/**
+ * React Router v6.22.1
  *
  * Copyright (c) Remix Software Inc.
  *
