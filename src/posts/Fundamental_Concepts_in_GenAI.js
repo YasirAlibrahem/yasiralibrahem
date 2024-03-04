@@ -9,7 +9,7 @@ const FundamentalConceptsInGenAI = () => {
   const location = useLocation();
 
   useEffect(() => {
-    fetch('2021-08-21.md')
+    fetch("2024-03-02.md")
       .then(response => response.text())
       .then(text => {
         const parsedMarkdown = frontMatter(text);
@@ -37,4 +37,3 @@ const FundamentalConceptsInGenAI = () => {
 
 export default FundamentalConceptsInGenAI;
 
-//import post1 from './2024-03-02.md';

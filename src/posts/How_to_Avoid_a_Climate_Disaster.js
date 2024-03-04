@@ -1,4 +1,3 @@
-import post1 from './2024-01-06.md';
 import frontMatter from 'front-matter';
 import { marked } from 'marked'
 import { useState, useEffect } from 'react';
@@ -9,7 +8,7 @@ const [post, setPost] = useState([]);
 const location = useLocation();
 
 useEffect(() => {
-    fetch(post1)
+    fetch("2024-01-06.md")
     .then(response => response.text())
     .then(text => {
         const parsedMarkdown = frontMatter(text);
