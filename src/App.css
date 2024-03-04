@@ -19,5 +19,12 @@
 }
 
 .BlogPosts {
+  display: flex;
   text-align: justify;
+  justify-content: 'space-between'
+}
+
+.BlogPost {
+  flex: '0 0 47%';
+  margin-right: '3%'  
 }
