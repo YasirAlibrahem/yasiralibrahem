@@ -22,12 +22,14 @@ useEffect(() => {
 
   return (
     <div>
-        <img src={process.env.PUBLIC_URL + '/cover-san-francisco.png'} alt="Post Cover" style={{borderRadius: '5%', width: '100%', height: '50%'}} />
+        <Link to={`/posts/ThoughtsOnSalesEngineering`}>
+          <img src={process.env.PUBLIC_URL + '/cover-san-francisco.png'} alt="Post Cover" style={{borderRadius: '5%', width: '100%', height: '50%'}} />
+        </Link>
         <h2 style={{ textAlign: 'center' }}>{post.title}</h2>
-        <p style={{ color: 'gray', textAlign: 'left' }}>{post.date}</p>
+        <p style={{ textAlign: 'left' }}>{post.date}</p>
         {location.pathname === '/' && <div>
-          <p style={{ color: 'gray', textAlign: 'left' }}>{post.excerpt}</p>
-          <Link style={{ color: 'black', float: 'left' }} to={`/posts/ThoughtsOnSalesEngineering`}>Read More</Link>  
+          <p style={{ textAlign: 'left' }}>{post.excerpt}</p>
+          {/* <Link style={{ float: 'left' }} to={`/posts/ThoughtsOnSalesEngineering`}>Read More</Link>   */}
           </div>}
         {location.pathname !== '/' && <div style={{textAlign: 'justify'}} dangerouslySetInnerHTML={{ __html: post.content}} />}
     </div>

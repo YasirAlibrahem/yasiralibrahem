@@ -4,6 +4,7 @@ import FundamentalConceptsInGenAI from './posts/Fundamental_Concepts_in_GenAI'
 import HowToAvoidAClimateDisaster from './posts/How_to_Avoid_a_Climate_Disaster';
 import ThoughtsOnSalesEngineering from './posts/Thoughts_on_Sales_Engineering';
 import DeveloperProuctivity101 from './posts/Developer_Productivity_101';
+import WholesomePrivacyPolicy from './wholesome/PrivacyPolicy';
 import { Routes, Route } from 'react-router-dom';
 import React from 'react';
 
@@ -18,6 +19,7 @@ const BlogPosts = () => {
                 {/* might add <link> inside <route>, but that caused rendering issues */}
                 <Route path="/posts/HowToAvoidAClimateDisaster" element={<HowToAvoidAClimateDisaster />} />
                 <Route path="/posts/ThoughtsOnSalesEngineering" element={<ThoughtsOnSalesEngineering />} />
+                <Route path="/wholesome/privacypolicy" element={<WholesomePrivacyPolicy />} />
             </Routes>
             </div>
         </div>
