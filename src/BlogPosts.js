@@ -5,6 +5,8 @@ import HowToAvoidAClimateDisaster from './posts/How_to_Avoid_a_Climate_Disaster'
 import ThoughtsOnSalesEngineering from './posts/Thoughts_on_Sales_Engineering';
 import DeveloperProuctivity101 from './posts/Developer_Productivity_101';
 import RealRealonPM from './posts/Real_Real_on_PM';
+import MentalModelsToCultiavte from './posts/Mental_Models_To_Cultiavte';
+import OnLeadershipAndManagement from './posts/On_Leadership_And_Management';
 import WholesomePrivacyPolicy from './wholesome/PrivacyPolicy';
 import { Routes, Route } from 'react-router-dom';
 import React from 'react';
@@ -15,6 +17,8 @@ const BlogPosts = () => {
             <div className="BlogPost">
             <Routes>
                 <Route path="/" element={<PostList />} />
+                <Route path="/posts/MentalModelsToCultiavte" element={<MentalModelsToCultiavte />} />
+                <Route path="/posts/OnLeadershipAndManagement" element={<OnLeadershipAndManagement />} />
                 <Route path="/posts/RealRealonPM" element={<RealRealonPM />} />
                 <Route path="/posts/DeveloperProuctivity101" element={<DeveloperProuctivity101 />} />
                 <Route path="/posts/FundamentalConceptsInGenAI" element={<FundamentalConceptsInGenAI />} />

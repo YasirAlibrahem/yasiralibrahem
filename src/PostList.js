@@ -4,10 +4,18 @@ import HowToAvoidAClimateDisaster from './posts/How_to_Avoid_a_Climate_Disaster'
 import ThoughtsOnSalesEngineering from './posts/Thoughts_on_Sales_Engineering';
 import DeveloperProductivity101 from './posts/Developer_Productivity_101';
 import RealRealonPM from './posts/Real_Real_on_PM';
+import OnLeadershipAndManagement from './posts/On_Leadership_And_Management';
+import MentalModelsToCultiavte from './posts/Mental_Models_To_Cultiavte';
 
 const PostList = () => {
   return (
     <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap' }}>
+      <div style={{ flex: '0 0 47%', marginBottom: '3%' }}>
+        <MentalModelsToCultiavte />
+      </div>
+      <div style={{ flex: '0 0 47%', marginBottom: '3%' }}>
+        <OnLeadershipAndManagement />
+      </div>
       <div style={{ flex: '0 0 47%', marginBottom: '3%' }}>
         <RealRealonPM />
       </div>
